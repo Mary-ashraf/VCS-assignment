@@ -10,8 +10,13 @@ long getSum(vector<int> array) {
     return sum;
 }
 
+long getAverage(vector<int> array) {
+    return getSum(array) / array.size();
+}
+
 int main() {
     vector<int> array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     cout << getSum(array) << endl;
+    cout << getAverage(array) << endl;
     return 0;
 }
